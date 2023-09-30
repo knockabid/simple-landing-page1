@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Inter:wght@400;600;700;800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="container-header">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="nav">
+        <a href="#">Landing Pages</a>
+        <a href="#">Features</a>
+        <a href="#">Services</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="btn-getstarte">
+        <button>Get Started</button>
+      </div>
+    </header>
+    <div class="hero">
+      <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="b">
+            <path
+              fill="currentColor"
+              d="M762 650q38 150-112 182t-211.5-88.5q-61.5-120.5-207-182t-29-152q116.5-90.5 207-193T613 194q113 80 112 193t37 263Z"
+            />
+          </clipPath>
+          <filter id="a" x="-50vw" y="-50vh" width="100vw" height="100vh">
+            <feFlood flood-color="#fff" result="neutral-gray" />
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="2.5"
+              numOctaves="100"
+              stitchTiles="stitch"
+              result="noise"
+            />
+            <feColorMatrix
+              in="noise"
+              type="saturate"
+              values="0"
+              result="destaturatedNoise"
+            />
+            <feComponentTransfer in="desaturatedNoise" result="theNoise">
+              <feFuncA type="table" tableValues="0 0 0.3 0" />
+            </feComponentTransfer>
+            <feBlend
+              in="SourceGraphic"
+              in2="theNoise"
+              mode="soft-light"
+              result="noisy-image"
+            />
+          </filter>
+        </defs>
+        <g filter="url(#a)" clip-path="url(#b)">
+          <path
+            fill="#f76700"
+            d="M762 650q38 150-112 182t-211.5-88.5q-61.5-120.5-207-182t-29-152q116.5-90.5 207-193T613 194q113 80 112 193t37 263Z"
+          />
+        </g>
+      </svg>
+      <h4>Present your service</h4>
+      <h1>
+        Make Landing Page<br />
+        Fast And Easily
+      </h1>
+      <p>
+        Create Custome landing pages with shades that convert <br />more
+        visitors than any website - no codding reequired
+      </p>
+      <div class="form">
+        <input type="text" placeholder="Enter your email " />
+        <button>Subscribe</button>
+      </div>
+      <h5>Trust by over 50,000+ customers</h5>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

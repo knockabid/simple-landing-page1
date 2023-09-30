@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inter;
+}
+body {
+  overflow: hidden;
+}
+.container-header {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+}
+
+.container-header .nav {
+  display: flex;
+  gap: 30px;
+}
+
+.container-header .nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.container-header .btn-getstarte button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid #fc7414;
+  font-weight: 600;
+}
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.hero h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 2.5385rem + 2.0513vw, 5rem);
+  color: #3e3e3e;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.form input {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+  color: #ffc296;
+  font-size: 15px;
+}
+.form button {
+  padding: 10px 20px;
+  background-color: #fc7414;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+
+.form {
+  margin: 10px 0;
+}
+
+.hero h5 {
+  color: #aab3bb;
+}
+svg {
+  position: absolute;
+  z-index: -1;
+  transform: scale(1);
+  right: -300px;
+  top: -50px;
+  width: 50%;
+}
